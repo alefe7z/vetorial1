@@ -14,8 +14,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Instalar PyInstaller
-        run: pip install pyinstaller
+      - name: Instalar PyInstaller e PySide6
+        run: pip install pyinstaller pyside6
 
       - name: Gerar o .exe
         run: pyinstaller --onefile --windowed --name Vetorial main.py
